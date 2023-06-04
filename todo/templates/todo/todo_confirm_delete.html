@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete Todo</title>
+</head>
+<body>
+    <h1>Confirm Delete Todo</h1>
+    <p>Are you sure you want to delete "{{ todo.title }}"?</p>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
+
